@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title_login">Connexion</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/header.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main class="main-content">
+    <section class="auth-section">
+      <div class="auth-card">
+        <h1 data-i18n="login_title">Connexion</h1>
+        <p data-i18n="login_subtitle">Accédez à votre espace personnel</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label data-i18n="label_email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="label_password">Mot de passe</label>
+            <input type="password" id="password" required />
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="label_role">Je suis</label>
+            <select id="role" required>
+              <option value="CLIENT" data-i18n="role_client">Client</option>
+              <option value="AGENT" data-i18n="role_agent">Agent assistant</option>
+              <option value="ADMIN" data-i18n="role_admin">Administrateur</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-i18n="btn_login_submit">
+            Se connecter
+          </button>
+        </form>
+
+        <p class="auth-link">
+          <span data-i18n="no_account">Pas encore de compte ?</span>
+          <a href="/pages/register.html" data-i18n="btn_register">Inscription</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/footer.js"></script>
+  <script src="/assets/js/auth.js"></script>
+</body>
+</html>

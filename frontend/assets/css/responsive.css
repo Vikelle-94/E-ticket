@@ -1,0 +1,97 @@
+/* ============================================
+   RESPONSIVE — Adaptation tous écrans
+   ============================================ */
+
+/* ===== TABLETTES (max 992px) ===== */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .main-nav ul {
+    gap: 1rem;
+  }
+}
+
+/* ===== MOBILES (max 768px) ===== */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: var(--shadow-md);
+    display: none;
+    padding: 1rem;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Formulaire de recherche */
+  .search-form {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .search-form .form-group {
+    min-width: 100%;
+  }
+
+  /* Grille avantages */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+}
+
+/* ===== TRÈS PETITS MOBILES (max 480px) ===== */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .feature-card {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "site_name": "Réservation Voyage",
+  "page_title_home": "Réservation Voyage — Accueil",
+
+  "nav_home": "Accueil",
+  "nav_search": "Rechercher",
+  "nav_my_tickets": "Mes billets",
+  "nav_contact": "Contact",
+
+  "btn_login": "Connexion",
+  "btn_register": "Inscription",
+  "btn_search": "Rechercher",
+
+  "menu_profile": "Mon profil",
+  "menu_tickets": "Mes billets",
+  "menu_logout": "Déconnexion",
+
+  "hero_title": "Réservez votre voyage en toute simplicité",
+  "hero_subtitle": "Comparez les bus Eco, Confort et VIP. Payez par Orange Money, MTN MoMo ou carte bancaire. Recevez votre billet en PDF.",
+
+  "label_from": "Départ",
+  "label_to": "Arrivée",
+  "label_date": "Date",
+
+  "features_title": "Pourquoi nous choisir ?",
+  "feature_1_title": "5 compagnies partenaires",
+  "feature_1_text": "General Express, Charter, Trésor, Amis de la Route, Blue Bird.",
+  "feature_2_title": "Paiement mobile",
+  "feature_2_text": "Orange Money, MTN MoMo ou carte bancaire.",
+  "feature_3_title": "Billet PDF instantané",
+  "feature_3_text": "Téléchargez et imprimez votre billet avec QR code.",
+  "feature_4_title": "Notifications avant départ",
+  "feature_4_text": "Rappels automatiques avant le départ de votre bus.",
+
+  "footer_about_title": "À propos",
+  "footer_about_text": "Plateforme de réservation de billets de bus au Cameroun. Réservez en ligne, payez par Orange Money, MTN MoMo ou carte bancaire.",
+  "footer_links_title": "Liens rapides",
+  "footer_about": "Qui sommes-nous",
+  "footer_companies_title": "Nos compagnies",
+  "footer_contact_title": "Contact",
+  "footer_copyright": "© 2025 Réservation Voyage — Tous droits réservés."
+}

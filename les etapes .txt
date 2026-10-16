@@ -1,0 +1,504 @@
+# 📋 PROJET COMPLET — Site de Réservation de Billets de Voyage
+## Cameroun 🇨🇲 — Regroupement final en étapes structurées
+
+---
+
+## 🎯 ÉTAPE 1 — Présentation générale du projet
+
+| Élément | Détail |
+|---------|--------|
+| **Pays** | 🇨🇲 Cameroun |
+| **Type** | Plateforme multi-compagnies de réservation de bus |
+| **Compagnies** | General Express, Charter, Trésor, Amis de la Route, Blue Bird |
+| **Langages** | HTML, CSS, JavaScript, Python |
+| **Langues du site** | 🇫🇷 Français + 🇬🇧 Anglais (bilingue) |
+| **Compatibilité** | Adapté à tous types d'écrans (mobile, tablette, PC) |
+| **Canaux de vente** | 🌐 En ligne (client) + 🏢 Au guichet (agent) |
+| **Acteurs** | Administrateur, Agent assistant, Client |
+
+---
+
+## 👥 ÉTAPE 2 — Les 3 acteurs et leurs rôles
+
+### 🛡️ Administrateur
+- Gère les compagnies, bus, trajets, chauffeurs, utilisateurs
+- Définit les prix des trajets
+- Consulte les statistiques
+- Gère les notifications
+
+### 🧑‍💼 Agent assistant
+- Vend des billets au guichet (présentiel)
+- Cherche un trajet pour un client
+- Sélectionne un siège libre
+- Encaisse le paiement
+- **Signale la vente** → le siège devient indisponible partout
+- Imprime le billet PDF
+- Confirme / annule des réservations
+
+### 👤 Client
+- Recherche un voyage
+- Choisit la compagnie, le bus, le siège
+- Voit les infos du chauffeur
+- Paie en ligne
+- Reçoit les notifications
+- Télécharge et imprime son billet PDF
+- Peut annuler sa réservation
+
+> Chaque acteur a **sa propre page de connexion** et son **espace personnel**.
+
+---
+
+## 🌍 ÉTAPE 3 — Bilinguisme (Français / Anglais)
+
+Le site est **entièrement bilingue** :
+
+- 🇫🇷 Français
+- 🇬🇧 Anglais
+
+**Éléments traduits :**
+- Toutes les pages (Header, Footer, boutons, formulaires)
+- Messages d'erreur et de confirmation
+- Notifications (email, SMS, site)
+- Billets PDF
+
+**Comment :** un bouton de langue (🇫🇷 / 🇬🇧) dans le Header, sur toutes les pages.
+
+---
+
+## 📱 ÉTAPE 4 — Adaptation à tous types d'écrans
+
+| Appareil | Adaptation |
+|----------|------------|
+| 📱 Téléphone | Grille compacte, boutons larges |
+| 📲 Tablette | Grille moyenne |
+| 💻 Ordinateur portable | Affichage complet |
+| 🖥️ Ordinateur de bureau | Affichage étendu |
+
+Le contenu reste **lisible, cliquable et bien organisé** partout, sans zoom ni défilement horizontal.
+
+---
+
+## 🏢 ÉTAPE 5 — Les compagnies de bus
+
+- 🚌 General Express
+- 🚌 Charter
+- 🚌 Trésor
+- 🚌 Amis de la Route
+- 🚌 Blue Bird
+
+> Le client peut **filtrer par compagnie** lors de sa recherche.
+
+---
+
+## 🚌 ÉTAPE 6 — Les catégories de bus
+
+| Catégorie | Capacité | Disposition | Prix (ex. Douala → Yaoundé) |
+|-----------|----------|-------------|----------------------------|
+| 🟢 **Eco** | 50 à 70 sièges | 4 par rangée (2 + allée + 2) | **5 000 FCFA** |
+| 🔵 **Confort** | 30 à 45 sièges | 3 par rangée (2 + allée + 1) | **7 500 FCFA** |
+| 🟣 **VIP** | 15 à 25 sièges | 2 par rangée (1 + allée + 1) | **12 000 FCFA** |
+
+### Options possibles
+- Climatisé ✅ / ❌
+- Télévision ✅ / ❌
+- *(VIP)* WiFi, prises USB, service à bord
+
+### Statuts des bus
+- 🟢 **Libre** (disponible)
+- 🟡 **En maintenance**
+- 🔴 **Hors service**
+
+> 💡 Plus la catégorie est élevée, **moins il y a de sièges**, plus le confort et le prix augmentent.
+
+---
+
+## 💰 ÉTAPE 7 — Grille tarifaire
+
+### Les prix sont **identiques pour toutes les compagnies**
+
+| Trajet | 🟢 Eco | 🔵 Confort | 🟣 VIP |
+|--------|--------|-----------|--------|
+| Douala → Kribi | 3 500 | 5 500 | 9 000 |
+| **Douala → Yaoundé** | **5 000** | **7 500** | **12 000** |
+| Douala → Bafoussam | 6 000 | 9 000 | 14 000 |
+| Yaoundé → Bamenda | 7 000 | 10 500 | 16 000 |
+| Yaoundé → Garoua | 12 000 | 18 000 | 27 000 |
+
+**Le prix dépend uniquement de :**
+- La **distance** (trajet)
+- La **catégorie** du bus
+
+**Il ne dépend PAS de la compagnie.**
+
+> C'est l'**administrateur** qui définit et gère les prix.
+
+---
+
+## 🖼️ ÉTAPE 8 — Structure des pages
+
+**Règle obligatoire :** chaque page contient un **Header** et un **Footer**.
+
+### 🔓 Pages publiques
+- Accueil
+- Connexion (tous les acteurs)
+- Inscription (clients)
+
+### 👤 Espace Client
+- Recherche de voyage
+- Choix de la compagnie et du bus
+- Choix du siège
+- Informations chauffeur
+- Paiement
+- Mes billets
+- Mes notifications
+- Téléchargement PDF
+
+### 🧑‍💼 Espace Agent
+- Tableau de bord
+- Vendre un billet au guichet
+- Liste des réservations
+- Confirmer / Annuler
+- Impression PDF au guichet
+
+### 🛡️ Espace Administrateur
+- Tableau de bord + statistiques
+- Gestion des compagnies
+- Gestion des bus
+- Gestion des trajets
+- Gestion des chauffeurs
+- Gestion des utilisateurs
+- Suivi des paiements
+- Gestion des notifications
+
+---
+
+## 🗄️ ÉTAPE 9 — Base de données
+
+| Table | Contenu |
+|-------|---------|
+| **Utilisateurs** | Nom, email, téléphone, mot de passe, rôle, langue préférée |
+| **Compagnies** | Nom, logo, contact |
+| **Bus** | Immatriculation, catégorie, capacité, options, statut, compagnie |
+| **Chauffeurs** | Nom, prénom, téléphone, permis, années d'expérience |
+| **Trajets** | Lieu départ/arrivée, heure départ/arrivée, prix, bus, compagnie |
+| **Sièges** | Numéro, statut (libre/réservé/bloqué), lié à un trajet |
+| **Réservations** | Client, trajet, siège, **canal de vente**, statut |
+| **Paiements** | Méthode, montant, statut, référence |
+| **Notifications** | Client, message, type, date d'envoi, statut de lecture |
+
+---
+
+## 🪑 ÉTAPE 10 — Gestion des sièges
+
+### Numérotation
+- Chaque bus a ses sièges **numérotés de 1 à N** (N = capacité du bus)
+- Le numéro est **fixe** et apparaît sur le plan
+
+### Affichage par couleur
+
+| Couleur | Signification | Cliquable ? |
+|---------|---------------|-------------|
+| 🟢 **Vert** | Siège **libre** | ✅ Oui |
+| 🔵 **Bleu** | Siège **sélectionné par vous** | ✅ Oui (pour désélectionner) |
+| 🟠 **Orange** | Siège **en cours de réservation** (bloqué 10 min) | ❌ Non |
+| ⚫ **Gris** | Siège **déjà réservé** (en ligne ou guichet) | ❌ Non |
+
+### Disposition réaliste (allée centrale)
+
+**🟢 Eco (4 par rangée)**
+```
+🟢1   🟢2   │   🟢3   🟢4
+🟢5   🟢6   │   🟢7   🟢8
+```
+
+**🔵 Confort (3 par rangée)**
+```
+🟢1   🟢2   │   🟢3
+🟢4   🟢5   │   🟢6
+```
+
+**🟣 VIP (2 par rangée)**
+```
+🟢1        │        🟢2
+🟢3        │        🟢4
+```
+
+---
+
+## 🔒 ÉTAPE 11 — Blocage temporaire des sièges (10 minutes)
+
+### But
+Éviter que **deux personnes réservent le même siège** en même temps.
+
+### Fonctionnement
+1. Un client clique sur un siège → il est **bloqué pendant 10 minutes** (🟠 orange)
+2. Le client paie dans ce délai → siège **définitivement réservé** (⚫ gris)
+3. Le client ne paie pas → siège **libéré automatiquement** (🟢 vert)
+
+### Pourquoi 10 minutes ?
+- Assez pour remplir un formulaire de carte bancaire
+- Assez pour valider un paiement Orange Money / MTN MoMo
+- Assez pour confirmer le code PIN
+
+---
+
+## 🔄 ÉTAPE 12 — Double canal de vente (en ligne + guichet)
+
+### 🌐 Vente en ligne (client)
+1. Le client cherche un trajet
+2. Il choisit le bus et le siège
+3. Il paie en ligne
+4. Le siège est **immédiatement réservé**
+
+### 🏢 Vente au guichet (agent)
+1. Le client se présente au guichet
+2. L'agent cherche le trajet
+3. Il sélectionne un siège libre
+4. Il encaisse le paiement
+5. Il **signale la vente** → le siège devient indisponible partout
+6. Il imprime le billet PDF
+
+### ⚠️ Synchronisation en temps réel
+- Un siège vendu au guichet → **disparaît du site immédiatement**
+- Un siège vendu en ligne → **disparaît du guichet immédiatement**
+- **Impossible de vendre le même siège deux fois**
+
+---
+
+## 🛣️ ÉTAPE 13 — Gestion des trajets
+
+Chaque trajet contient :
+- Lieu de départ → Lieu d'arrivée
+- Heure de départ → Heure d'arrivée
+- Date
+- Compagnie
+- Bus assigné (catégorie + options)
+- Chauffeur assigné
+- Prix (selon catégorie et distance)
+- Nombre de places disponibles
+
+**Filtres client :** date, heure, prix, catégorie, compagnie.
+
+---
+
+## 🧑‍✈️ ÉTAPE 14 — Informations du chauffeur
+
+Affichées au client **après le choix du siège, avant le paiement** :
+- Nom et prénom
+- Nombre d'années d'expérience
+
+> 💡 Rôle : rassurer le client avant qu'il paie.
+
+---
+
+## 🔄 ÉTAPE 15 — Parcours complet du client
+
+```
+1. Rechercher un voyage (départ, arrivée, date)
+        ↓
+2. Choisir la compagnie
+        ↓
+3. Choisir le bus : Eco / Confort / VIP (prix différents)
+        ↓
+4. Choisir son siège (plan visuel numéroté)
+        ↓
+5. Voir les informations du chauffeur
+        ↓
+6. Payer en ligne (3 options)
+        ↓
+7. Billet confirmé + QR code + PDF
+        ↓
+8. Recevoir les notifications avant le départ
+```
+
+---
+
+## 💳 ÉTAPE 16 — Moyens de paiement (Cameroun)
+
+### 🟠 Orange Money
+- Message : *« Une somme de X FCFA sera retirée de votre compte. »*
+- Bouton **Valider**
+- Code PIN : **4 chiffres**
+
+### 🟡 MTN Mobile Money
+- Message : *« Une somme de X FCFA sera retirée de votre compte. »*
+- Bouton **Valider**
+- Code PIN : **5 chiffres**
+
+### 💳 Carte bancaire
+Formulaire avec :
+- Numéro de carte (16 chiffres)
+- Nom du titulaire
+- Date d'expiration (MM/AA)
+- CVV / CVC (3 chiffres)
+- Pays / Code postal
+
+### 💵 Espèces (au guichet uniquement)
+- L'agent encaisse directement
+- Il valide la vente dans le système
+
+---
+
+## 🔔 ÉTAPE 17 — Système de notifications
+
+### 📩 Lors d'une réservation
+- Confirmation de réservation (email + SMS)
+- Billet PDF disponible
+
+### ⏰ Rappels avant le départ du bus
+
+| Moment | Message |
+|--------|---------|
+| **24 h avant** | *« Votre bus part demain à [heure]. »* |
+| **1 h avant** | *« Votre bus part dans 1 heure. »* |
+| **30 min avant** | *« Votre bus part dans 30 minutes. »* |
+| **15 min avant** | *« Le départ de votre bus est dans 15 minutes. »* |
+| **5 min avant** | *« Votre bus part dans 5 minutes. »* |
+
+### ❌ Notifications d'annulation
+- Annulation par le client → confirmation + info remboursement
+- Annulation par l'admin → notification à tous les clients concernés
+
+### 🔧 Notifications de changement
+- Changement d'heure de départ
+- Changement de bus
+- Changement de chauffeur
+
+### 📢 Canaux utilisés
+- Email
+- SMS
+- Notification dans le site (cloche 🔔 avec compteur)
+- *(optionnel)* Notification push
+
+---
+
+## 🎫 ÉTAPE 18 — Confirmation, annulation et PDF
+
+### ✅ Confirmation
+- Après paiement → billet **confirmé**
+- **QR code unique** généré
+- Notification email + SMS
+- Billet accessible dans **Mes billets**
+
+### ❌ Annulation
+- Le client peut annuler son billet
+- Siège **libéré automatiquement**
+- Remboursement selon les règles
+- Notification d'annulation
+
+### 🖨️ Impression PDF
+Le billet PDF contient :
+- Nom du client
+- Compagnie de bus
+- Trajet (départ, arrivée, date, heure)
+- Numéro du siège
+- Catégorie du bus + options
+- Informations du chauffeur
+- QR code
+- Référence de paiement
+- **Le tout dans la langue choisie par le client**
+
+---
+
+## 🏗️ ÉTAPE 19 — Organisation du développement
+
+1. **Maquettes** → dessiner chaque page (toutes tailles d'écran)
+2. **Base de données** → créer toutes les tables
+3. **Système de connexion** → 3 rôles séparés
+4. **Système bilingue** → FR / EN
+5. **Espace Admin** → compagnies, bus, chauffeurs, trajets, prix
+6. **Recherche de trajets** → côté client
+7. **Choix du bus et du siège** → plan visuel interactif numéroté
+8. **Informations chauffeur** → affichage avant paiement
+9. **Paiement** → OM (PIN 4) + MoMo (PIN 5) + Carte + Espèces
+10. **Blocage temporaire** → 10 minutes par siège
+11. **Double canal** → vente en ligne + guichet synchronisés
+12. **PDF + QR code** → génération du billet
+13. **Système de notifications** → rappels automatiques
+14. **Espace Agent** → vente au guichet
+15. **Tests sur tous écrans** → mobile, tablette, PC
+16. **Tests de langue** → FR / EN
+17. **Mise en ligne**
+
+---
+
+## 💡 ÉTAPE 20 — Suggestions d'amélioration
+
+- ⭐ Avis clients sur les chauffeurs et compagnies
+- 🎁 Codes promo et parrainage
+- 📊 Export Excel des ventes par compagnie
+- 🔒 Double authentification pour les admins
+- 📍 Suivi du bus en direct (GPS)
+- 🗺️ Carte interactive des trajets
+- 💬 Chat en direct avec le service client
+- 🎫 Historique complet des voyages du client
+- 🧾 Facture téléchargeable après paiement
+
+---
+
+## 📌 RÉSUMÉ VISUEL FINAL
+
+```
+┌────────────────────────────────────────────────────────────┐
+│     SITE DE RÉSERVATION DE BILLETS — CAMEROUN 🇨🇲          │
+│                                                            │
+│   🌍 Bilingue : Français + Anglais                         │
+│   📱 Adapté : Mobile / Tablette / PC                       │
+│   🔄 Double canal : En ligne + Guichet                     │
+│                                                            │
+│   👤 CLIENT      🧑‍💼 AGENT      🛡️ ADMIN                 │
+│                                                            │
+│   🏢 Compagnies : General, Charter, Trésor,                │
+│                   Amis de la Route, Blue Bird              │
+│                                                            │
+│   🚌 Catégories : Eco (5 000) / Confort (7 500) / VIP      │
+│                  (12 000)                                  │
+│                                                            │
+│   🪑 Sièges : 🟢 Libre / 🔵 Choix / 🟠 Bloqué / ⚫ Réservé │
+│   ⏱️ Blocage temporaire : 10 minutes                       │
+│                                                            │
+│   💳 Paiement : Orange Money (PIN 4)                       │
+│                 MTN MoMo (PIN 5)                           │
+│                 Carte bancaire                             │
+│                 Espèces (guichet)                          │
+│                                                            │
+│   🔔 Notifications : 24h / 1h / 30min / 15min / 5min       │
+│                                                            │
+│   🎫 Billet PDF avec QR code                               │
+└────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## ✅ Projet entièrement défini
+
+Le projet est maintenant **complet, structuré et cohérent** :
+
+- ✔️ Pays : Cameroun
+- ✔️ 5 compagnies partenaires
+- ✔️ 3 acteurs (admin, agent, client)
+- ✔️ 3 catégories de bus (Eco, Confort, VIP)
+- ✔️ Grille tarifaire unique
+- ✔️ Sièges numérotés et colorés
+- ✔️ Blocage temporaire de 10 minutes
+- ✔️ Double canal de vente synchronisé
+- ✔️ 4 moyens de paiement
+- ✔️ Système de notifications complet
+- ✔️ Billets PDF avec QR code
+- ✔️ Bilingue FR / EN
+- ✔️ Adapté à tous les écrans
+- ✔️ Base de données complète
+- ✔️ Structure des pages
+
+---
+
+## ❓ Prochaines étapes possibles
+
+Quand vous serez prêt, nous pourrons aborder **sans code** :
+
+1. 🎨 **Les maquettes** → description page par page
+2. 🗄️ **Le modèle de base de données** → tables et relations détaillées
+3. 📁 **La structure du projet** → organisation des dossiers
+4. 📝 **Le cahier des charges** → document récapitulatif officiel
+
+Dites-moi **par quoi vous voulez commencer**, et nous avancerons **étape par étape**. 👍

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page_title_home">Réservation Voyage — Accueil</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/header.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+  <link rel="stylesheet" href="/assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Header injecté dynamiquement -->
+  <div id="header-placeholder"></div>
+
+  <!-- Contenu principal -->
+  <main class="main-content">
+
+    <!-- Section héro -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 data-i18n="hero_title">Réservez votre voyage en toute simplicité</h1>
+        <p data-i18n="hero_subtitle">
+          Comparez les bus Eco, Confort et VIP. Payez par Orange Money,
+          MTN MoMo ou carte bancaire. Recevez votre billet en PDF.
+        </p>
+
+        <!-- Formulaire de recherche rapide -->
+        <form class="search-form" id="quickSearchForm">
+          <div class="form-group">
+            <label data-i18n="label_from">Départ</label>
+            <input type="text" id="fromCity" placeholder="Douala" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="label_to">Arrivée</label>
+            <input type="text" id="toCity" placeholder="Yaoundé" required />
+          </div>
+          <div class="form-group">
+            <label data-i18n="label_date">Date</label>
+            <input type="date" id="travelDate" required />
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="btn_search">
+            Rechercher
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section avantages -->
+    <section class="features">
+      <h2 data-i18n="features_title">Pourquoi nous choisir ?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚌</div>
+          <h3 data-i18n="feature_1_title">5 compagnies partenaires</h3>
+          <p data-i18n="feature_1_text">
+            General Express, Charter, Trésor, Amis de la Route, Blue Bird.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3 data-i18n="feature_2_title">Paiement mobile</h3>
+          <p data-i18n="feature_2_text">
+            Orange Money, MTN MoMo ou carte bancaire.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎫</div>
+          <h3 data-i18n="feature_3_title">Billet PDF instantané</h3>
+          <p data-i18n="feature_3_text">
+            Téléchargez et imprimez votre billet avec QR code.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3 data-i18n="feature_4_title">Notifications avant départ</h3>
+          <p data-i18n="feature_4_text">
+            Rappels automatiques avant le départ de votre bus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injecté dynamiquement -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/footer.js"></script>
+  <script src="/assets/js/auth.js"></script>
+</body>
+</html>

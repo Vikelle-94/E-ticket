@@ -1,0 +1,74 @@
+<!-- ============================================
+     HEADER — Présent sur toutes les pages
+     Contient : logo, navigation, langue, connexion
+     ============================================ -->
+<header class="main-header">
+  <div class="header-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/assets/images/logo.png" alt="Travel Booking Logo" />
+        <span data-i18n="site_name">Réservation Voyage</span>
+      </a>
+    </div>
+
+    <!-- Navigation principale -->
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="/index.html" data-i18n="nav_home">Accueil</a></li>
+        <li><a href="/pages/search.html" data-i18n="nav_search">Rechercher</a></li>
+        <li><a href="/pages/my-tickets.html" data-i18n="nav_my_tickets">Mes billets</a></li>
+        <li><a href="/pages/contact.html" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Actions à droite -->
+    <div class="header-actions">
+
+      <!-- Sélecteur de langue -->
+      <div class="language-switcher">
+        <button id="langBtn" class="lang-btn">
+          <img id="currentFlag" src="/assets/images/flag-fr.png" alt="FR" />
+          <span id="currentLang">FR</span>
+          <span class="arrow">▼</span>
+        </button>
+        <ul class="lang-dropdown" id="langDropdown">
+          <li data-lang="fr">
+            <img src="/assets/images/flag-fr.png" alt="FR" /> Français
+          </li>
+          <li data-lang="en">
+            <img src="/assets/images/flag-en.png" alt="EN" /> English
+          </li>
+        </ul>
+      </div>
+
+      <!-- Boutons connexion/inscription -->
+      <div class="auth-buttons" id="authButtons">
+        <a href="/pages/login.html" class="btn btn-outline" data-i18n="btn_login">
+          Connexion
+        </a>
+        <a href="/pages/register.html" class="btn btn-primary" data-i18n="btn_register">
+          Inscription
+        </a>
+      </div>
+
+      <!-- Menu utilisateur (affiché si connecté) -->
+      <div class="user-menu" id="userMenu" style="display: none;">
+        <button id="userBtn" class="user-btn">
+          <span id="userName">Utilisateur</span>
+          <span class="arrow">▼</span>
+        </button>
+        <ul class="user-dropdown" id="userDropdown">
+          <li><a href="/pages/profile.html" data-i18n="menu_profile">Mon profil</a></li>
+          <li><a href="/pages/my-tickets.html" data-i18n="menu_tickets">Mes billets</a></li>
+          <li><a href="#" id="logoutBtn" data-i18n="menu_logout">Déconnexion</a></li>
+        </ul>
+      </div>
+
+      <!-- Bouton menu mobile -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+
+    </div>
+  </div>
+</header>

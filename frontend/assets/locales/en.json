@@ -1,0 +1,42 @@
+{
+  "site_name": "Travel Booking",
+  "page_title_home": "Travel Booking — Home",
+
+  "nav_home": "Home",
+  "nav_search": "Search",
+  "nav_my_tickets": "My Tickets",
+  "nav_contact": "Contact",
+
+  "btn_login": "Login",
+  "btn_register": "Sign Up",
+  "btn_search": "Search",
+
+  "menu_profile": "My Profile",
+  "menu_tickets": "My Tickets",
+  "menu_logout": "Logout",
+
+  "hero_title": "Book your trip with ease",
+  "hero_subtitle": "Compare Eco, Comfort and VIP buses. Pay with Orange Money, MTN MoMo or bank card. Get your ticket in PDF.",
+
+  "label_from": "From",
+  "label_to": "To",
+  "label_date": "Date",
+
+  "features_title": "Why choose us?",
+  "feature_1_title": "5 partner companies",
+  "feature_1_text": "General Express, Charter, Trésor, Amis de la Route, Blue Bird.",
+  "feature_2_title": "Mobile payment",
+  "feature_2_text": "Orange Money, MTN MoMo or bank card.",
+  "feature_3_title": "Instant PDF ticket",
+  "feature_3_text": "Download and print your ticket with QR code.",
+  "feature_4_title": "Notifications before departure",
+  "feature_4_text": "Automatic reminders before your bus departs.",
+
+  "footer_about_title": "About",
+  "footer_about_text": "Bus ticket booking platform in Cameroon. Book online, pay with Orange Money, MTN MoMo or bank card.",
+  "footer_links_title": "Quick links",
+  "footer_about": "About us",
+  "footer_companies_title": "Our companies",
+  "footer_contact_title": "Contact",
+  "footer_copyright": "© 2025 Travel Booking — All rights reserved."
+}
